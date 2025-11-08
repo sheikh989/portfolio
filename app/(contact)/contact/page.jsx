@@ -33,28 +33,28 @@ const ContactPage = () => {
                 blurAmount="3xl"
             />
 
-            <div className="container mx-auto px-6 py-20 flex flex-col items-center">
+            <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col items-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-center space-y-4 mb-16"
+                    className="text-center space-y-4 mb-12 sm:mb-16 w-full"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-primary">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                         Get In Touch
                     </h2>
-                    <p className="text-muted-foreground max-w-xl mx-auto">
+                    <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base px-4">
                         Have a project in mind? Looking to collaborate? Drop me a message,
                         and let's create something amazing together.
                     </p>
                 </motion.div>
 
-                <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-8 items-start">
+                <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-6 sm:gap-8 items-start">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="w-full lg:w-2/3 backdrop-blur-sm bg-secondary/5 p-6 rounded-2xl border border-secondary/10"
+                        className="w-full lg:w-2/3 backdrop-blur-sm bg-secondary/5 p-4 sm:p-6 rounded-2xl border border-secondary/10"
                     >
                         <ContactForm onSubmit={handleSubmit} />
                     </motion.div>
@@ -63,17 +63,17 @@ const ContactPage = () => {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="w-full lg:w-1/3 backdrop-blur-sm bg-secondary/5 p-6 rounded-2xl border border-secondary/10"
+                        className="w-full lg:w-1/3 backdrop-blur-sm bg-secondary/5 p-4 sm:p-6 rounded-2xl border border-secondary/10"
                     >
-                        <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-                        <div className="space-y-6">
+                        <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-primary">Contact Information</h3>
+                        <div className="space-y-4 sm:space-y-6">
                             {contactInfo.map((info, index) => (
-                                <div key={index} className="flex items-start space-x-4">
-                                    <div className="p-2 rounded-lg bg-secondary/10">
+                                <div key={index} className="flex items-start space-x-3 sm:space-x-4">
+                                    <div className="p-2 rounded-lg bg-secondary/10 flex-shrink-0">
                                         {info.icon}
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-muted-foreground">
+                                    <div className="min-w-0 flex-1">
+                                        <p className="text-xs sm:text-sm text-muted-foreground mb-1">
                                             {info.label}
                                         </p>
                                         {info.link ? (
@@ -81,12 +81,12 @@ const ContactPage = () => {
                                                 href={info.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-primary hover:underline"
+                                                className="text-sm sm:text-base text-primary hover:underline break-words"
                                             >
                                                 {info.value}
                                             </a>
                                         ) : (
-                                            <p className="text-primary">
+                                            <p className="text-sm sm:text-base text-primary break-words">
                                                 {info.value}
                                             </p>
                                         )}

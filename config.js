@@ -19,7 +19,7 @@ export const config = {
             id: 1,
             title: "AI-Powered Code Review Assistant",
             description: "An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.",
-            image: "/projects/project-1.jpg",
+            image: "/projects/project-1.webp",
             technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL", "Docker"],
             github: "#",
             demo: "#"
@@ -28,7 +28,7 @@ export const config = {
             id: 2,
             title: "Real-time Collaborative Whiteboard",
             description: "A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.",
-            image: "/projects/project-2.jpeg",
+            image: "/projects/project-2.webp",
             technologies: ["TypeScript", "WebRTC", "Socket.io", "Canvas API", "Node.js", "Redis"],
             github: "#",
             demo: "#"
@@ -37,7 +37,7 @@ export const config = {
             id: 3,
             title: "Blockchain Voting System",
             description: "A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.",
-            image: "/projects/project-3.jpeg",
+            image: "/projects/project-3.webp",
             technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
             github: "#",
             demo: "#"
@@ -46,7 +46,7 @@ export const config = {
             id: 4,
             title: "Cloud Infrastructure Dashboard",
             description: "A comprehensive cloud management platform for monitoring, managing, and optimizing multi-cloud infrastructure. Features real-time metrics, cost analysis, automated scaling, and security compliance monitoring across AWS, Azure, and GCP.",
-            image: "/projects/project-4.jpeg",
+            image: "/projects/project-4.webp",
             technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform", "React"],
             github: "#",
             demo: "#"
@@ -55,20 +55,12 @@ export const config = {
             id: 5,
             title: "Neural Network Visualizer",
             description: "An interactive web application for visualizing, training, and experimenting with neural networks. Features drag-and-drop architecture builder, real-time training visualization, model comparison tools, and export capabilities for production deployment.",
-            image: "/projects/project-5.jpeg",
+            image: "/projects/project-5.webp",
             technologies: ["Python", "TensorFlow.js", "D3.js", "Next.js", "WebGL", "TypeScript"],
             github: "#",
             demo: "#"
-        },
-        {
-            id: 6,
-            title: "E-Commerce Analytics Platform",
-            description: "A comprehensive analytics dashboard for e-commerce businesses with real-time sales tracking, customer behavior insights, inventory management, and predictive analytics. Features interactive charts, custom reports, and automated alerts for key business metrics.",
-            image: "/projects/project-1.jpg",
-            technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Chart.js", "TailwindCSS"],
-            github: "#",
-            demo: "#"
         }
+ 
     ],
     skills: [
         {

@@ -9,15 +9,15 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="py-6 border-t border-secondary/20 flex items-center justify-center"
+            className="py-4 sm:py-6 border-t border-secondary/20 flex items-center justify-center"
         >
-            <div className="text-center">
-                <div className="text-sm text-muted-foreground flex items-center gap-2 justify-center">
-                    <span>© {new Date().getFullYear()} {config.developer.name}</span>
-                    <span>•</span>
-                    <span>All rights reserved</span>
-                    <span>•</span>
-                    <span>Made with {config.developer.name}</span>
+            <div className="text-center px-4 w-full max-w-4xl mx-auto">
+                <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground flex flex-wrap items-center justify-center gap-1 sm:gap-1.5 md:gap-2 leading-tight">
+                    <span className="whitespace-nowrap">© {new Date().getFullYear()} {config.developer.name}</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="whitespace-nowrap">All rights reserved</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="whitespace-nowrap">Made with {config.developer.name}</span>
                 </div>
             </div>
         </motion.footer>

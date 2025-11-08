@@ -7,7 +7,6 @@ import { config } from '@/config';
 import Link from 'next/link';
 import { BackgroundPresets } from '@/components/ui/background-effects';
 import { motion } from 'framer-motion';
-import LanyardPlayer from './LanyardPlayer';
 import SkillsShowcase from './SkillsShowcase';
 
 const containerAnimation = {
@@ -107,12 +106,7 @@ I build web that builds brands.              </motion.span>
             </Link>
           </motion.div>
 
-          <motion.div
-            variants={itemAnimation}
-            className="mt-12 w-full mx-auto"
-          >
-            <LanyardPlayer />
-          </motion.div>
+     
 
           <motion.div
             initial={{ opacity: 0 }}

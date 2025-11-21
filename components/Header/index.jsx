@@ -105,7 +105,7 @@ const ContactButton = ({ isMobile = false, onLinkClick }) => (
         transition={{ delay: isMobile ? 0.5 : 0.4, duration: 0.5 }}
         onClick={onLinkClick}
     >
-        <a href="/sheikh_shakeel_qureshi.pdf" download className={isMobile ? 'w-full' : ''}>
+        <a href="/resume_sheikh_shakeel_qureshi.pdf" download className={isMobile ? 'w-full' : ''}>
             <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 flex items-center gap-2`}>
                 <HiDownload className="w-4 h-4" />
                 <span>Resume</span>

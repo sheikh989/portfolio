@@ -1,55 +1,35 @@
-![Thumbnail ](images/Thumbnail.png)
+# Sheikh Shakeel - AI/ML Engineer Portfolio
 
-# Sheikh Shakeel - Portfolio Website
+Welcome to my portfolio! I'm Sheikh Shakeel, an AI/ML Engineer passionate about building intelligent systems that solve real-world problems. This portfolio showcases my journey in artificial intelligence, machine learning, and data science.
 
-A modern and responsive portfolio website to showcase my projects, skills, and experiences. Built with Next.js and styled using Tailwind CSS, this portfolio provides a seamless user experience with smooth animations and an organized layout.
+## About Me
 
-## Features
+I specialize in developing AI-powered solutions with a focus on:
 
-- **Responsive Design**: Optimized for all devices, including mobile, tablet, and desktop.
-- **Dark Theme**: Provides a visually appealing dark theme.
-- **Smooth Animations**: Utilizes Framer Motion for animations.
+- **Machine Learning & Deep Learning**: Building predictive models and neural networks
+- **Generative AI**: Working with LLMs, prompt engineering, and AI agents
+- **Data Science**: Extracting insights from complex datasets
+- **Intelligent Automation**: Creating systems that automate workflows using AI
 
-## Technologies Used
+With 1.5+ years of experience and 20+ completed projects, I'm dedicated to pushing the boundaries of what's possible with artificial intelligence while keeping human-centered design at the core of my work.
 
-- **Next.js**: React framework for building static and dynamic websites.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Framer Motion**: Animation library for React to create smooth transitions and effects.
-- **GitHub API**: Fetches the latest GitHub projects dynamically.
+## Tech Stack
 
-## Getting Started
+**AI/ML**: Python, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy  
+**GenAI & LLMs**: LangChain, CrewAI, OpenAI API, Hugging Face  
+**Tools & Platforms**: Jupyter, Power BI, Git, Docker  
+**Data**: SQL, MongoDB, Data Visualization
 
-### Prerequisites
+## Featured Projects
 
-- [Node.js](https://nodejs.org/) (v14 or later)
-- [Git](https://git-scm.com/)
+Explore my portfolio to see projects ranging from AI-powered automation agents to machine learning models and data science applications. Each project demonstrates my commitment to building intelligent, scalable, and impactful solutions.
 
-### Installation
+## Connect With Me
 
-1. Clone the repository:
+- **Email**: sheikhupdesk@gmail.com
+- **GitHub**: [@sheikh989](https://github.com/sheikh989)
+- **Location**: India
 
-   ```bash
-   git clone https://github.com/sheikh989/portfolio.git
-   ```
+---
 
-2. Navigate into the project directory:
-
-   ```bash
-   cd portfolio
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-
-
-![Demo](images/Screenshot_1.png)
+Built with Next.js, TailwindCSS, and Framer Motion

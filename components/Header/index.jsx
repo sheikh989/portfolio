@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { HiMenu, HiX, HiDownload } from 'react-icons/hi';
+import { FaBrain } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
 import { config } from '@/config';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
@@ -57,16 +57,11 @@ const Logo = ({ isMobile = false }) => (
             className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
         >
             <motion.div
-                whileHover={{ opacity:0.5 }}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12 sm:w-14 sm:h-14'} rounded-full bg-gray-950 flex items-center justify-center shadow-lg`}
             >
-                <Image
-                    src="/logo.png"
-                    width={2000}
-                    height={2000}
-                    alt='logo'
-                    className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12 sm:w-14 sm:h-14'} rounded-full`}
-                />
+                <FaBrain className={`${isMobile ? 'w-5 h-5' : 'w-6 h-6 sm:w-7 sm:h-7'} text-gray-400`} />
             </motion.div>
             <motion.span
                 className={`text-gray-300 font-semibold ${isMobile ? 'hidden' : 'text-base sm:text-lg'}`}
@@ -74,7 +69,7 @@ const Logo = ({ isMobile = false }) => (
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
             >
-                <span className="hidden sm:inline">{config.developer.name} | Devxora</span>
+                <span className="hidden sm:inline">{config.developer.name} | AI/ML Engineer</span>
                 {/* <span className="sm:hidden">{config.developer.name}</span> */}
             </motion.span>
         </Link>
@@ -104,13 +99,19 @@ const Navigation = ({ isMobile = false, onLinkClick }) => (
 
 const ContactButton = ({ isMobile = false, onLinkClick }) => (
     <motion.div
-        className={`flex items-center ${isMobile ? 'w-full justify-center mt-4' : 'space-x-6'}`}
+        className={`flex items-center gap-3 ${isMobile ? 'w-full flex-col' : ''}`}
         initial={{ opacity: 0, x: isMobile ? 0 : 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: isMobile ? 0.5 : 0.4, duration: 0.5 }}
         onClick={onLinkClick}
     >
-        <Link href={"https://github.com/huzaifahmedz/Huzaif-Ahmed-portfolio-fourth"} target='_blank' className={isMobile ? 'w-full' : ''}>
+        <a href="/sheikh_shakeel_qureshi.pdf" download className={isMobile ? 'w-full' : ''}>
+            <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 flex items-center gap-2`}>
+                <HiDownload className="w-4 h-4" />
+                <span>Resume</span>
+            </Button>
+        </a>
+        <Link href={"https://github.com/sheikh989/portfolio"} target='_blank' className={isMobile ? 'w-full' : ''}>
             <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}>
                 <span className="hidden sm:inline">Repo Inside!</span>
                 <span className="sm:hidden">Template</span>

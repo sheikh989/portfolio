@@ -135,8 +135,7 @@ const SkillsSection = () => {
                                 Technical Proficiency
                             </h2>
                             <p className="text-lg text-muted-foreground">
-                                A comprehensive overview of my technical expertise across various
-                                development domains and tools.
+                                A comprehensive overview of my technical expertise across machine learning, data science, and AI development tools.
                             </p>
                         </motion.div>
                     </div>

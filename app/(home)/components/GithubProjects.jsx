@@ -244,14 +244,27 @@ const GithubProjects = () => {
 
     const projects = React.useMemo(() => {
         if (!data) return [];
+        const featuredRepos = config.featuredRepos || [];
+        
         const filtered = data
             .filter(project => 
                 !project.fork && 
-                !project.private && 
-                (project.name.toLowerCase().includes('portfolio') || 
-                 (project.topics && project.topics.some(topic => topic.toLowerCase().includes('portfolio'))))
+                !project.private
             )
-            .sort((a, b) => b.stargazers_count - a.stargazers_count)
+            .sort((a, b) => {
+                // Featured repos come first
+                const aIndex = featuredRepos.indexOf(a.name);
+                const bIndex = featuredRepos.indexOf(b.name);
+                
+                if (aIndex !== -1 && bIndex !== -1) {
+                    return aIndex - bIndex; // Both featured, sort by order in array
+                }
+                if (aIndex !== -1) return -1; // a is featured, comes first
+                if (bIndex !== -1) return 1;  // b is featured, comes first
+                
+                // Neither featured, sort by update date
+                return new Date(b.updated_at) - new Date(a.updated_at);
+            })
             .slice(0, ITEMS_PER_PAGE * page);
         
         return filtered.map((project, index) => ({

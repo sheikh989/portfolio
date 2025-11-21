@@ -3,23 +3,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiCode } from 'react-icons/hi';
-import { FaReact, FaNodeJs, FaGithub, FaAws } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTailwindcss, SiFigma, SiGreensock, SiThreedotjs, SiJavascript, SiMaterialdesign } from 'react-icons/si';
+import { FaGithub, FaPython, FaBrain, FaMicrochip,FaRobot } from 'react-icons/fa';
+import { SiPowerbi, SiOpenai, SiFastapi,SiTensorflow, SiScikitlearn, SiMysql } from 'react-icons/si';
 import { TbBrandFramerMotion } from 'react-icons/tb';
 
 const skills = [
-    { name: "AWS", icon: <FaAws className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
-    { name: "React.js", icon: <FaReact className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Express", icon: <SiExpress className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "MongoDB", icon: <SiMongodb className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 sm:row-span-2 row-span-1" },
-    { name: "Node.js", icon: <FaNodeJs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
+    { name: "Python", icon: <FaPython className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
+    { name: "SQL", icon: <SiMysql className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "FastAPI", icon: <SiFastapi className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Machine Learning", icon: <FaBrain className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 sm:row-span-2 row-span-1" },
+    { name: "Deep Learning", icon: <FaMicrochip  className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
     { name: "GitHub", icon: <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Tailwind", icon: <SiTailwindcss className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "GSAP", icon: <SiGreensock className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Framer Motion", icon: <TbBrandFramerMotion className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Three.js", icon: <SiThreedotjs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
-    { name: "Figma", icon: <SiFigma className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Material UI", icon: <SiMaterialdesign className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "CNN / RNN", icon: <FaRobot className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "LangChain", icon: <SiOpenai className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "CrewAI", icon: <SiOpenai className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Power BI", icon: <SiPowerbi className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
+    { name: "TensorFlow", icon: <SiTensorflow className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Scikit-Learn", icon: <SiScikitlearn className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
 ];
 
 const containerAnimation = {

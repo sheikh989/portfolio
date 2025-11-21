@@ -15,13 +15,13 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "Huzaif\'s Portfolio",
+  title: "Sheikh Shakeel\'s Portfolio",
   icons:{
-icon: "/logo.png"
+    icon: "/brain-icon.svg"
   },
   description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
   keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
-  author: "Huzaif Ahmed",
+  author: "Sheikh Shakeel",
   robots: "index, follow",
 };
 

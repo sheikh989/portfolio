@@ -211,20 +211,20 @@ export const config = {
     experiences: [
     {
         position: "AI/ML Engineer",
-        company: "SyncWave Corporation",
+        company: " Cognitive computer solutions",
         period: "Sep 2025 - Present",
         location: "Remote, India",
         description:
-        "Monitoring and analyzing production machine learning models, ensuring reliability, performance, and data quality across live systems.",
+        "I am working as an AI/ML Engineer at Cognitive computer solutions where I am working on various AI/ML projects.",
         responsibilities: [
-        "Monitored four production ML models using the Arize observability platform",
-        "Diagnosed data pipeline failures and resolved feature-level issues",
+        "Developing and deploying AI/ML models for various business use cases",
+        "CNN based project for multiple project management system",
         "Identified underperforming data segments to improve model accuracy",
         "Ensured model stability by tracking drift, data quality, and prediction anomalies"
         ],
         technologies: [
         "Python",
-        "Arize AI",
+        "CNN",
         "Machine Learning",
         "Model Monitoring",
         "Data Pipelines",
